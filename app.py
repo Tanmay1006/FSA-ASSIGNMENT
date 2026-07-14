@@ -164,10 +164,10 @@ def score_dial(value, color, name):
         marker=dict(colors=[color, LINE]),
         textinfo="none", sort=False, direction="clockwise", showlegend=False,
     ))
-    fig.add_annotation(text=f"<b>{value}</b>", font=dict(size=44, color=TEXT), showarrow=False, y=0.55)
-    fig.add_annotation(text=f"<b>{g} · {label}</b>", font=dict(size=15, color=rcolor), showarrow=False, y=0.30)
-    fig.add_annotation(text=f"<b>{name}</b>", font=dict(size=20, color=color), showarrow=False, y=0.08)
-    fig.update_layout(paper_bgcolor=BG, margin=dict(l=10, r=10, t=10, b=10), height=300)
+    fig.add_annotation(text=f"<b>{value}</b>", font=dict(size=44, color=TEXT), showarrow=False, y=0.62)
+    fig.add_annotation(text=f"<b>{g} · {label}</b>", font=dict(size=15, color=rcolor), showarrow=False, y=0.42)
+    fig.add_annotation(text=f"<b>{name}</b>", font=dict(size=20, color=color), showarrow=False, y=0.24)
+    fig.update_layout(paper_bgcolor=BG, margin=dict(l=10, r=10, t=10, b=40), height=340)
     return fig
 
 
